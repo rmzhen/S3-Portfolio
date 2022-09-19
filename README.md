@@ -1,5 +1,4 @@
 # S3-Portfolio
-
 This repository will be dedicated as my portfolio for S3 FHICT. The format of this repository will be developed during this semester.
 
 ## Proof of Concepts
