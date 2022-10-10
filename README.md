@@ -6,7 +6,8 @@ For an overview of all learning outcomes for this semester, click [here](https:/
 
 ## Proof of Concepts
 One of ways of doing research is by making Proof of Concepts. You can find the PoC's I've made for this semester in the following links:
-- [Spring Boot microservices (MovieCatalog)](https://github.com/rmzhen/PoC_MovieCatalog)}
+- [Spring Boot microservices (MovieCatalog)](https://github.com/rmzhen/PoC_MovieCatalog)
+- [Spring Boot Full Stack with Angular](https://github.com/rmzhen/PoC_EmployeeManager)
 
 ## Individual project
 My project is a dashboard with Shazam and Last.fm integrations via their APIs. The project with all the repos and other files can be found in the following links: 
