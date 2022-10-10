@@ -1,6 +1,9 @@
 # S3-Portfolio
 This repository will be dedicated as my portfolio for S3 FHICT. The format of this repository will be developed during this semester.
 
+## Learning outcomes
+For an overview of all learning outcomes for this semester, click [here](https://github.com/rmzhen/S3-Portfolio/blob/main/Docs/Learning%20Outcomes.md).
+
 ## Proof of Concepts
 One of ways of doing research is by making Proof of Concepts. You can find the PoC's I've made for this semester in the following links:
 - [Spring Boot microservices (MovieCatalog)](https://github.com/rmzhen/PoC_MovieCatalog)}
