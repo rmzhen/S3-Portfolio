@@ -1,4 +1,14 @@
 # Learning outcomes BA
+## Table of contents
+- [1. Web application](#1-web-application)
+- [2. Software quality](#2-software-quality)
+- [3. Agile method](#3-agile-method)
+- [4. CI/CD](#4-cicd)
+- [5. Cultural differences and ethics](#5-cultural-differences-and-ethics)
+- [6. Requirements and design](#6-requirements-and-design)
+- [7. Business process](#7-business-process)
+- [8. Professional](#8-professional)
+
 ## 1. Web application
 You design and build **user-friendly**, **full-stack** web applications.
 - **User friendly:** You apply best practices when creating user interfaces and basic user experience testing and development techniques.
