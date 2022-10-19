@@ -2,12 +2,7 @@
 This repository will be dedicated as my portfolio for S3 FHICT. The format of this repository will be developed during this semester.
 
 ## Learning outcomes
-For an overview of all learning outcomes for this semester, click [here](https://github.com/rmzhen/S3-Portfolio/blob/main/Docs/Learning%20Outcomes.md).
-
-## Proof of Concepts
-One of ways of doing research is by making Proof of Concepts. You can find the PoC's I've made for this semester in the following links:
-- [Spring Boot microservices (MovieCatalog)](https://github.com/rmzhen/PoC_MovieCatalog)
-- Spring Boot Full Stack with Angular [front-end](https://github.com/rmzhen/PoC_EmployeeManagerFE)/[back-end](https://github.com/rmzhen/PoC_EmployeeManager)
+For an overview of all learning outcomes for this semester, click [here](https://github.com/rmzhen/S3-Portfolio/blob/main/Docs/learning-outcomes.md).
 
 ## Individual project
 My project is a dashboard with Shazam and Last.fm integrations via their APIs. The project with all the repos and other files can be found [on the GitHub organisation page](https://github.com/IPS3-Shazzboard).
@@ -20,4 +15,7 @@ Down below is a table of proof to demonstrate my proficiency for the learning ou
 
 | Explanation | Learning Outcome | Link |
 |:------------|:-----------------|:----:|
-| Movie catalog Spring Boot microservices POC | [Web application](docs/learning-outcomes.md#web-application) | [🔗](https://github.com/rmzhen/PoC_MovieCatalog)
+| Movie catalog Spring Boot microservices POC | [Web application](Docs/learning-outcomes.md#1-web-application) | [🔗](https://github.com/rmzhen/PoC_MovieCatalog)
+| Employee manager full stack application POC | [Web application](Docs/learning-outcomes.md#1-web-application) | [Front-end](https://github.com/rmzhen/PoC_EmployeeManagerFE) / [Back-end](https://github.com/rmzhen/PoC_EmployeeManager)
+| CI/CD implementation within my individual project | [CI/CD](Docs/learning-outcomes.md#4-cicd) | TBD
+| User stories and C4-model for my individual project | [Requirements and design](Docs/learning-outcomes.md#6-requirements-and-design) | TBD
