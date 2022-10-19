@@ -19,7 +19,7 @@ The definition of a user here is someone who:
 - As a user, I want to scrobble my results to Last.fm when I desire.
 	- The dashboard must have an option for the user to scrobble their Shazam result to Last.fm.
 
-* 05 September 2022. Subject to change.*
+*05 September 2022. Subject to change.*
 
 ## C4-model
 ### Context
