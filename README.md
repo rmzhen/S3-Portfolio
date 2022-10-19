@@ -14,3 +14,6 @@ My project is a dashboard with Shazam and Last.fm integrations via their APIs. T
 - [Shazzboard GitHub organisation](https://github.com/IPS3-Shazzboard)
 - [C4-model](https://github.com/rmzhen/S3-Portfolio/blob/main/Design&Analysis/C4-model.md)
 - [User stories](https://github.com/rmzhen/S3-Portfolio/blob/main/Design%26Analysis/User_Stories.md)
+
+## Group project
+In this semester we're also tasked with working on a project within a group. The repositories for this project can be found [here](https://github.com/Modus-1).
