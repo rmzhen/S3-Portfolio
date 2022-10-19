@@ -10,8 +10,7 @@ One of ways of doing research is by making Proof of Concepts. You can find the P
 - Spring Boot Full Stack with Angular [front-end](https://github.com/rmzhen/PoC_EmployeeManagerFE)/[back-end](https://github.com/rmzhen/PoC_EmployeeManager)
 
 ## Individual project
-My project is a dashboard with Shazam and Last.fm integrations via their APIs. The project with all the repos and other files can be found in the following links: 
-- [Shazzboard GitHub organisation](https://github.com/IPS3-Shazzboard)
+My project is a dashboard with Shazam and Last.fm integrations via their APIs. The project with all the repos and other files can be found [on the GitHub organisation page](https://github.com/IPS3-Shazzboard).
 - [C4-model](https://github.com/rmzhen/S3-Portfolio/blob/main/Design&Analysis/C4-model.md)
 - [User stories](https://github.com/rmzhen/S3-Portfolio/blob/main/Design%26Analysis/User_Stories.md)
 
