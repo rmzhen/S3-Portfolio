@@ -20,4 +20,4 @@ Down below is a table of proof to demonstrate my proficiency for the learning ou
 
 | Explanation | Learning Outcome | Link |
 |:------------|:-----------------|:----:|
-| Movie catalog Spring Boot microservices POC | [Web application](docs/learning-outcomes.md#web-application) | [🔗](https://github.com/rmzhen/PoC_MovieCatalog)
+| Movie catalog Spring Boot microservices POC | [Web application](Docs/learning-outcomes.md#web-application) | [🔗](https://github.com/rmzhen/PoC_MovieCatalog)
