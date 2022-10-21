@@ -2,7 +2,7 @@
 This repository will be dedicated as my portfolio for S3 FHICT. The format of this repository will be developed during this semester.
 
 ## Learning outcomes
-For an overview of all learning outcomes for this semester, click [here](https://github.com/rmzhen/S3-Portfolio/blob/main/Docs/learning-outcomes.md).
+For an overview of all learning outcomes for this semester, click [here](https://github.com/rmzhen/S3-Portfolio/blob/main/docs/learning-outcomes.md).
 
 ## Individual project
 My project is a dashboard with Shazam and Last.fm integrations via their APIs. The project with all the repos and other files can be found [on the GitHub organisation page](https://github.com/IPS3-Shazzboard).
