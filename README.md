@@ -15,7 +15,8 @@ Down below is a table of proof to demonstrate my proficiency for the learning ou
 
 | Explanation | Learning Outcome | Link |
 |:------------|:-----------------|:----:|
-| Movie catalog Spring Boot microservices POC | [Web application](Docs/learning-outcomes.md#1-web-application) | [🔗](https://github.com/rmzhen/PoC_MovieCatalog)
-| Employee manager full stack application POC | [Web application](Docs/learning-outcomes.md#1-web-application) | [Front-end](https://github.com/rmzhen/PoC_EmployeeManagerFE) / [Back-end](https://github.com/rmzhen/PoC_EmployeeManager)
-| CI/CD implementation within my individual project | [CI/CD](Docs/learning-outcomes.md#4-cicd) | TBD
-| User stories and C4-model for my individual project | [Requirements and design](Docs/learning-outcomes.md#6-requirements-and-design) | [🔗](proof/user-stories&c4-models.md)
+| Movie catalog Spring Boot microservices POC | [Web application](docs/learning-outcomes.md#1-web-application) | [🔗](https://github.com/rmzhen/PoC_MovieCatalog)
+| Employee manager full stack application POC | [Web application](docs/learning-outcomes.md#1-web-application) | [Front-end](https://github.com/rmzhen/PoC_EmployeeManagerFE) / [Back-end](https://github.com/rmzhen/PoC_EmployeeManager)
+| Agile methodology | [Agile method](ocs/learning-outcomes.md#3-agile-method) | TBD
+| CI/CD implementation within my individual project | [CI/CD](docs/learning-outcomes.md#4-cicd) | TBD
+| User stories and C4-model for my individual project | [Requirements and design](docs/learning-outcomes.md#6-requirements-and-design) | [🔗](proof/user-stories&c4-models.md)
