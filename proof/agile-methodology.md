@@ -1,10 +1,22 @@
 # Agile methodology
 
+## Table of content
+- [Intro](#intro)
+- [What is agile?](#what-is-agile?)
+- [Agile vs waterfall](#agile-vs-waterfall)
+- [GP implementation](#gp-implementation)
+  - [Structure](#structure)
+    - [Daily](#daily)
+    - [Sprint](#sprint)
+  - [Tools](#tools)
+    
+
 ## Intro
 In semester 3 we are tasked with learning about the agile methodology and how to implement these methods within our projects. This document will elaborate on what agile is and how I've implemented these methods within my projects within this semester.
 
 ## What is agile?
 Agile is an iterative approach to project management and software development that helps teams deliver value to their customers faster and with fewer headaches. Instead of betting everything on a "big bang" launch, an agile team delivers work in small, but consumable, increments. Requirements, plans, and results are evaluated continuously so teams have a natural mechanism for responding to change quickly. 
+*Source: https://www.atlassian.com/agile*
 
 Within the Agile manifesto, there are 4 values and 12 principles that guide the Agile philosophy:
 
@@ -28,6 +40,7 @@ Within the Agile manifesto, there are 4 values and 12 principles that guide the 
 10. Simplicity--the art of maximizing the amount of work not done--is essential. 
 11. The best architectures, requirements, and designs emerge from self-organizing teams. 
 12. At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly. 
+*Source: https://agilemanifesto.org*
 
 ## Agile vs Waterfall
 
@@ -40,6 +53,7 @@ Because of agile's iterative nature, it's easier to adapt to changing circumstan
 
 **Agile release process**
 ![agile_release_process](../images/agile_release_train.svg)
+*Source: https://www.atlassian.com/agile/project-management/project-management-intro*
 
 ## GP implementation
 
