@@ -9,7 +9,7 @@
     - [Daily](#daily)
     - [Sprint](#sprint)
   - [Tools](#tools)
-    - [GitHub Projects (abandoned)](#github-projects-(abandoned))
+    - [GitHub Projects (abandoned)](#github-projects-abandoned)
     - [Jira](#jira)
     - [SonarCloud](#sonarcloud)
     
