@@ -41,3 +41,29 @@ Because of agile's iterative nature, it's easier to adapt to changing circumstan
 **Agile release process**
 ![agile_release_process](../images/agile_release_train.svg)
 
+## GP implementation
+
+The repo for our group project can be found [here](https://github.com/Modus-1).
+
+### Structure
+#### Daily
+
+Each day we start with a stand-up lead by the scrum master, where we discuss our current standing in our project and devide open backlog items to the group memebers when possible. At the end of the day we discuss the progress we have made in the day and what subjects we will take to the next day.
+
+#### Sprint
+Before the start of each sprint, we set up new user stories based on the project description, assign points to the user stories with scrum poker and define the acceptance criteria for each of them. We then discuss this with our product owner, where we set the priorities and the goals for the next sprint. The tasks needed to be done gets assigned to every team member during our daily stand-up. Before the end of a sprint, we give our product owners a heads-up of our progress for expectation management and prepare a presentation for the sprint review. 
+
+### Tools
+#### GitHub Projects (abandoned)
+We decided to use GitHub Projects as our scrum board in the beginning of our GP. We had two different boards, with one for user stories and one for tasks and issues, as this was recommended to us by our IP teacher to keep them seperated. On 15 september 2022, switched over to Jira as our scrum board, as GitHub Projects lacked features that Jira does have, like issue types, child issues, assigning points and burndown charts.
+
+#### Jira
+As of 15 september 2022, we're using Jira as our scrum board and re-organised to have the user stories and tasks in a single board. This was advised to us by our GP teacher, as this gives a better overview of all the issues within a sprint for both us as a team and the product owners. As this seemed more logical to us as a team, we decided to switch to the structure of one scrum board with both user stories and tasks.
+
+![Jira-snippet](../images/Jira-snippet.png) 
+*Snippet of our Jira scrum board as of *21 october 2022*
+
+#### SonarCloud
+We are using SonarCloud to check for code quality within our GP. During each push to our repository, SonarCloud will check the code for things like code smells. test coverage, unnecessary code, code coverage, etc. Only if all of these checks pass, are we able to merge branches into our main or develop branches. 
+
+We currently have set our code coverage goal at 80%, but from feedback from our IP teacher about only needing to test code that are relevant to our user stories, we've decided to discuss this matter once more in the future.
