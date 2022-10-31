@@ -11,7 +11,7 @@ My project is a dashboard with Shazam and Last.fm integrations via their APIs. T
 In this semester we're also tasked with working on a project within a group. The repositories for this project can be found [here](https://github.com/Modus-1).
 
 ## Proof
-Down below is a table of proof to demonstrate my proficiency for the learning outcomes for this semester.
+Down below is a table of proof to demonstrate my proficiency for the learning outcomes of this semester.
 
 | Explanation | Learning Outcome | Link |
 |:------------|:-----------------|:----:|
