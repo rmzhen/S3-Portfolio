@@ -1,5 +1,11 @@
 # User stories & C4-model
 
+## Table of content
+- [Intro](#intro)
+- [User stories](#user-stories)
+- [C4-model](#c4-model)
+
+## Intro
 The main project I'l be working on during semester 3 is a dashboard with shazam and lastfm itegrations. To get a rough idea what functionalities the project needs, I've defined user stories and sketched a C4-model for the application.
 
 
@@ -18,8 +24,11 @@ The definition of a user here is someone who:
 	- The artist name with the artist description must be displayed on the dashboard when an artist is selected.
 - As a user, I want to scrobble my results to Last.fm when I desire.
 	- The dashboard must have an option for the user to scrobble their Shazam result to Last.fm.
+- As a user, I want to be able to input a song for the app to detect what song it is.
+	- The dashboard should be able to accept an audio file.
+	- The dashboard should return the results found from the given audio file.	
 
-*05 September 2022. Subject to change.*
+*07 November 2022. Subject to change.*
 
 ## C4-model
 ### Context
