@@ -6,6 +6,8 @@
 	- [Continuous integration](#continuous-integration)
 	- [Continuous delivery](#continuous-delivery)
 	- [Continuous deployment](#continuous-deployment)
+- [IP impementation](#ip-implementation)
+	- [CI](#ci)
 
 ## Intro
 In this semester, we're tasked to design and implement a (semi)automated releace process that matches the needs of the project context. To tackle this, I'll have to implement a coninuous integration and delivery/deployment solution.
