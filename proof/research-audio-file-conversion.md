@@ -11,7 +11,7 @@
 In my IP for this semester, I want to add a functionality which allows a user to input an audio file to detect and add to their history of (played) songs. The API I want to use requires the input file to be a `.raw` file for it to detect. To implement this, I will need to research how I can get an `.raw` file from other file formats.
 
 ## What is a .raw file?
-`.raw` audio files containing uncompressed pulse-code modulation (PCM) values without a metadata header and signature. The stored information within these files can be in any bit depth, sampling rate, ordering, endian-ness and channels._<sup>[[1]](#fmtz-raw-audio-file)</sup>
+`.raw` audio files containing uncompressed pulse-code modulation (PCM) values without a metadata header and signature. The stored information within these files can be in any bit depth, sampling rate, ordering, endian-ness and channels.<sup>[[1]](#fmtz-raw-audio-file)</sup>
 
 ## What types of audio files are relevant?
 Audio file formats can be categorized in three groups: <sup>[[2]](#composerfocus-audio-file-formats)</sup><sup>[[3]](#newsandviews-common-audio-formats)</sup>
