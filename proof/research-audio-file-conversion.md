@@ -42,8 +42,13 @@ With the answers to the subquestions and the result of my proof of concept, my c
 
 ## References
 >[1] <a name="fmtz-raw-audio-file"></a> _- Fmtz File Formats Information and Specifications_. (n.d.). https://web.archive.org/web/20160525083851/http://www.fmtz.com/misc/raw-audio-file-formats
+
 >[2] <a name="composerfocus-audio-file-formats"></a> Masalar, M. (2019, February 26). _Audio File Formats: Everything You Need To. . ._ Composer Focus. https://composerfocus.com/audio-file-formats/
+
 >[3] <a name="newsandviews-common-audio-formats"></a> Aleksandersen, D. (n.d.). _Common audio formats: Which one to use?_ https://newsandviews.dataton.com/common-audio-formats-which-one-to-use
+
 >[4] <a name="wikipedia-audio-file-format"></a> Wikipedia contributors. (2022, November 19). _Audio file format_. Wikipedia. https://en.wikipedia.org/wiki/Audio_file_format
+
 >[5] <a name="java-sound-api"></a> _Java Sound Programmer Guide_. (n.d.). https://docs.oracle.com/javase/8/docs/technotes/guides/sound/programmer_guide/contents.html
+
 >[6] <a name="so-convert-wav-to-raw"></a> _How do I convert audio from one format to wav or raw in Java?_ (2020b, March 10). Stack Overflow. https://stackoverflow.com/questions/60626467/how-do-i-convert-audio-from-one-format-to-wav-or-raw-in-java/60627602
