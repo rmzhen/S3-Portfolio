@@ -14,7 +14,7 @@ In my IP for this semester, I want to add a functionality which allows a user to
 `.raw` audio files containing uncompressed pulse-code modulation (PCM) values without a metadata header and signature. The stored information within these files can be in any bit depth, sampling rate, ordering, endian-ness and channels._<sup>[[1]](#fmtz-raw-audio-file)</sup>
 
 ## What types of audio files are relevant?
-Audio file formats can be categorized in three groups: <sup>[[2]](#composerfocus-audio-file-formats)</sup><sup>[[3]](#newsandviews-common-audio-files)</sup>
+Audio file formats can be categorized in three groups: <sup>[[2]](#composerfocus-audio-file-formats)</sup><sup>[[3]](#newsandviews-common-audio-formats)</sup>
 - Uncompressed audio format: audio completely un-altered from its original state.
 - Compressed audio format with lossless compression: compressed audio without loss of audio data.
 - Compressed audio format with lossy compression: compressed audio with date removed to create an even smaller file than with lossless compression.
