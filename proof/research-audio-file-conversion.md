@@ -1,4 +1,4 @@
-# How do I convert audio files to a raw file?
+# How to convert audio files to a raw file with the Shazam API in the Shazzboard project?
 
 ## Table of content
 
@@ -53,3 +53,17 @@
 *Source: AnthumChris on [How to Play RAW Audio Files?](https://stackoverflow.com/questions/62093473/how-to-play-raw-audio-files)*
 
 From the information above, the possible conclusion can be made that uncompressed audio file formats like .wav and .aiff contain the same PCM data as a raw audio file, with an added header containing information such as sample rate, bit depth, endianness and number of channels.
+
+## Proof of Concept
+I've made a [proof of concept](https://github.com/rmzhen/PoC_AudioConversion) with Java's [Java Sound API documentation](https://docs.oracle.com/javase/8/docs/technotes/guides/sound/programmer_guide/chapter7.html#a114527) and [Micha Pringle's answer on "How do I convert audio from one format to wav or raw in Java?"](https://stackoverflow.com/questions/60626467/how-do-i-convert-audio-from-one-format-to-wav-or-raw-in-java). To test the functionality of the PoC, I've recorded a snippet of Efteling's [Indische Waterlelies](https://www.youtube.com/watch?v=RzWPvgccYQ8) song. The PoC returns a `.txt` file in Byte array and Base64 string for both the converted `.wav` and `.raw` files. These files can be found here:
+- [Byte array `.wav` file](https://github.com/rmzhen/S3-Portfolio/blob/main/files/Efteling.wav-WAV-BA.md)
+- [Base64 `.wav` file](https://github.com/rmzhen/S3-Portfolio/blob/main/files/Efteling.wav-WAV-B64.md)
+- [Byte array `.raw` file](https://github.com/rmzhen/S3-Portfolio/blob/main/files/Efteling.wav-RAW-BA.md)
+- [Base64 `.raw` file](https://github.com/rmzhen/S3-Portfolio/blob/main/files/Efteling.wav-RAW-B64.md)
+
+To test if it works with the Shazam API I'm using for my IP, I've taken the contents of the Base64 `.raw` file and given it as an input in the API's detect endpoint. The API returned the song [Afrikaan Beat by Bert Kaempfert](https://www.youtube.com/watch?v=vGmR2dJSDvo), which is the same song as the Indische Waterlelies song I've used as input. 
+
+![ShazamAPI-result](https://github.com/rmzhen/S3-Portfolio/blob/main/images/audio-conversion-poc-result.png)
+*Snippet of the result from ShazamAPI.*
+
+## Conclusion
