@@ -14,7 +14,7 @@ In my IP for this semester, I want to add a functionality which allows a user to
 `.raw` audio files containing uncompressed pulse-code modulation (PCM) values without a metadata header and signature. The stored information within these files can be in any bit depth, sampling rate, ordering, endian-ness and channels.<sup>[[1]](#fmtz-raw-audio-file)</sup>
 
 ## What types of audio files are relevant?
-Audio file formats can be categorized in three groups: <sup>[[2]](#composerfocus-audio-file-formats)</sup><sup>[[3]](#newsandviews-common-audio-formats)</sup>
+Audio file formats can be categorized in three groups:<sup>[[2]](#composerfocus-audio-file-formats)</sup><sup>[[3]](#newsandviews-common-audio-formats)</sup>
 - Uncompressed audio format: audio completely un-altered from its original state.
 - Compressed audio format with lossless compression: compressed audio without loss of audio data.
 - Compressed audio format with lossy compression: compressed audio with date removed to create an even smaller file than with lossless compression.
@@ -22,7 +22,7 @@ Audio file formats can be categorized in three groups: <sup>[[2]](#composerfocus
 Since uncompressed audio files are completely un-altered from it's original state and `.raw` is also part of this group, this one seems to be the most relevant in my use-case. While it is possible to retrieve the original data from lossless compressed audio formats, this falls outside of this research's scope and will not be taken into consideration. Lossy compressed audio has some data removed and does not contain the original audio even after decompression, so this will also not be taken into consideration for this research.
 
 ## What is an uncompressed audio format?
-Uncompressed audio format is is a file that contains PCM data. One major uncompressed audio format is LPCM, a specific type of PCM. Besides a `.raw` file, the LPCM can also be stored in a `.wav` and `.aiff` files on Windows and macOS respectively. Both `.wav` and `.aiff` can store uncompressed, lossless and lossy audio files. The difference that set `.wav` and `.aiff` apart from a `.raw` format is the metadata header contained within the files, placed before the audio data, which contains the data for sample rate, bit depth, endianness and channels. <sup>[[4]](#wikipedia-audio-file-format)</sup>
+Uncompressed audio format is is a file that contains PCM data. One major uncompressed audio format is LPCM, a specific type of PCM. Besides a `.raw` file, the LPCM can also be stored in a `.wav` and `.aiff` files on Windows and macOS respectively. Both `.wav` and `.aiff` can store uncompressed, lossless and lossy audio files. The difference that set `.wav` and `.aiff` apart from a `.raw` format is the metadata header contained within the files, placed before the audio data, which contains the data for sample rate, bit depth, endianness and channels.<sup>[[4]](#wikipedia-audio-file-format)</sup>
 
 From the information above, the possible conclusion can be made that uncompressed audio file formats like .wav and .aiff contain the same PCM data as a raw audio file, with an added header containing information such as sample rate, bit depth, endianness and number of channels.
 
