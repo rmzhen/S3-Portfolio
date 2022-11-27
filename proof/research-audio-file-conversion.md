@@ -6,7 +6,6 @@
 - [What types of audio files are relevant?](what-types-of-audio-files-are-relevant?)
 - [What is an uncompressed audio format?](what-is-an-uncompressed-audio-format?)
   
-
 ## Intro
 In my IP for this semester, I want to add a functionality which allows a user to input an audio file to detect and add to their history of (played) songs. The API I want to use requires the input file to be a `.raw` file for it to detect. To implement this, I will need to research how I can get an `.raw` file from other file formats.
 
@@ -52,3 +51,13 @@ With the answers to the subquestions and the result of my proof of concept, my c
 >[5] <a name="java-sound-api"></a> _Java Sound Programmer Guide_. (n.d.). https://docs.oracle.com/javase/8/docs/technotes/guides/sound/programmer_guide/contents.html
 
 >[6] <a name="so-convert-wav-to-raw"></a> _How do I convert audio from one format to wav or raw in Java?_ (2020b, March 10). Stack Overflow. https://stackoverflow.com/questions/60626467/how-do-i-convert-audio-from-one-format-to-wav-or-raw-in-java/60627602
+
+
+## DOT Framework matrix
+| Research part | Library | Field | Lab | Showroom | Workshop |
+|:------------|:---|:---|:---|:---|:---:|
+| What is a .raw file? | x | | | | |
+| What types of audio files are relevant? | x | | | | |
+| What is an uncompressed audio format? | x | | | | |
+| Proof of concept | | | | | x |
+| Research: How to convert audio files to a raw file with the Shazam API in the Shazzboard project? | | | | x | |
