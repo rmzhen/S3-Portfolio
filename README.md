@@ -22,3 +22,4 @@ Down below is a table of proof to demonstrate my proficiency for the learning ou
 | CI/CD implementation within my individual project | [CI/CD](docs/learning-outcomes.md#4-cicd) | [🔗](proof/cicd.md)
 | User stories and C4-model for my individual project | [Requirements and design](docs/learning-outcomes.md#6-requirements-and-design) | [🔗](proof/user-stories&c4-models.md)
 | Research: audio conversion | [Professional](docs/learning-outcomes.md#8-professional) | [🔗](https://github.com/rmzhen/S3-Portfolio/blob/main/proof/research-audio-file-conversion.md)
+| Research: CORS | [Professional](docs/learning-outcomes.md#8-professional) | [🔗](https://github.com/rmzhen/S3-Portfolio/blob/main/proof/research-cors.md)
