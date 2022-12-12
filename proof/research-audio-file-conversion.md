@@ -5,6 +5,8 @@
 - [What is a .raw file?](what-is-a-raw-file?)
 - [What types of audio files are relevant?](what-types-of-audio-files-are-relevant?)
 - [What is an uncompressed audio format?](what-is-an-uncompressed-audio-format?)
+- [Conclusion](#conclusion)
+- [References](#references)
   
 ## Intro
 In my IP for this semester, I want to add a functionality which allows a user to input an audio file to detect and add to their history of (played) songs. The API I want to use requires the input file to be a `.raw` file for it to detect. To implement this, I will need to research how I can get an `.raw` file from other file formats.
