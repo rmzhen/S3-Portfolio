@@ -12,7 +12,6 @@
 	- [CORS globally](#cors-globally)
 - [Conclusion](#conclusion)
 - [References](#references)
-- 
 
 ## Intro
 In semester 3 we're tasked with developing a web application. To keep the project loosely coupled and scalable, the project is made with the microservices architecture in mind. Due to this, each service will send a request from their own origin, which causes cross origin requests to happen. As an application should only allow access to specific services, this research will focus on how to implement CORS within the Shazzboard project.
