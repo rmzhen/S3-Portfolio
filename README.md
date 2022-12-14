@@ -20,7 +20,7 @@ Down below is a table of proof to demonstrate my proficiency for the learning ou
 | Software quality | [Software quality](docs/learning-outcomes.md#2-software-quality) | [🔗](./proof/software-quality.md)
 | Agile methodology | [Agile method](docs/learning-outcomes.md#3-agile-method) | [🔗](./proof/agile-methodology.md)
 | CI/CD implementation within my individual project | [CI/CD](docs/learning-outcomes.md#4-cicd) | [🔗](./proof/cicd.md)
-| Cultural differences and ethics | [Culural differences and ethics](docs/learning-outcomes.md#5-cultural-differences-and-ethics) | [🔗](./proof/cultural-differences-and-ethics.md)
+| Cultural differences and ethics | [Cultural differences and ethics](docs/learning-outcomes.md#5-cultural-differences-and-ethics) | [🔗](./proof/cultural-differences-and-ethics.md)
 | User stories and C4-model for my individual project | [Requirements and design](docs/learning-outcomes.md#6-requirements-and-design) | [🔗](./proof/user-stories&c4-models.md)
 | Requitements and design GP | [Requirements and design](docs/learning-outcomes.md#6-requirements-and-design) | [🔗](./proof/requirements-and-design-gp.md)
 | Business processes | [Business process](docs/learning-outcomes.md#7-business-process) | [🔗](./proof/business-processes.md)
