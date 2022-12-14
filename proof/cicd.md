@@ -40,56 +40,155 @@ In this semester, we're tasked to design and implement a (semi)automated releace
 *Source: https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment*
 
 ## IP implementation
-### CI
-Within my individual project, I've chosen to use GitHub Actions for my CI. Down below is a snippet of the yml file for one of my microservices in Java.
 
+### CI Angular
+For my Angular application, I'm using Github actions for CI with Sonarcloud for my static code analysis. Down below is a snippet of the yml file for the Angular application.
 ```yml
-name: Java CI with Maven
+name: Node.js CI  
 
 on:
-
-push:
-
-branches: [ "main", "dev" ]
-
-pull_request:
-
-branches: [ "main", "dev" ]
+  push:
+    branches: ["main", "dev"]
+  pull_request:
+    branches: ["main", "dev"] 
 
 jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
 
-build:
+    strategy:
+      matrix:
+        node-version: [18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/  
 
-runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - run: npm install
+      - run: npm ci
+      - run: npm run build --if-present
+      # - run: npm test --passWithNoTests  
 
-steps:
-
-- uses: actions/checkout@v3
-
-- name: Set up JDK 17
-
-uses: actions/setup-java@v3
-
-with:
-
-java-version: '17'
-
-distribution: 'temurin'
-
-cache: maven
-
-- name: Build with Maven
-
-run: mvn -B package --file pom.xml
-
-- name: SonarCloud Scan
-
-uses: sonarsource/sonarcloud-github-action@master
-
-env:
-
-GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 ```
-*12 october 2022, subject to change.*
+*14 december 2022, subject to change.*
+
+### CI Spring Boot
+For my Spring Boot API, I'm also using GitHub actions for CI, but with Codiga for static code analysis. I initially wanted to use Sonarcloud for both my Angular application and Spring Boot API, but after running into issues with Sonarcloud not being able to run with a Spring Boot maven project, I've decided to use Codiga instead. Down below is a snippet of the yml file for the Spring Boot API.
+
+```yml
+name: Java CI with Maven  
+  
+on:  
+  push:  
+    branches: [ "main", "dev" ]  
+  pull_request:  
+    branches: [ "main", "dev" ]  
+  
+jobs:  
+  build:  
+  
+    runs-on: ubuntu-latest  
+  
+    steps:  
+    - uses: actions/checkout@v3  
+    - name: Set up JDK 17  
+      uses: actions/setup-java@v3  
+      with:  
+        java-version: '17'  
+        distribution: 'temurin'  
+        cache: maven  
+    - name: Build with Maven  
+      run: |   
+        mvn -B verify --file pom.xml  
+        mkdir staging && cp target/*.jar staging  
+  
+    - name: Check code meets quality standards  
+      id: codiga  
+      uses: codiga/github-action@master  
+      with:  
+        repo_token: ${{ secrets.GITHUB_TOKEN }}  
+        codiga_api_token: ${{ secrets.CODIGA_TOKEN }}  
+        min_quality_score: '75'  
+        max_defects_rate: '0.05'  
+        max_timeout_sec: '600'
+```
+*14 december 2022, subject to change.*
+
+### CD (Continuous Delivery) Angular
+For the delivery of the Angular application, I'm using Docker with docker containers. The containers are set up via a docker-compose file, which creates a container for the application with the defined settings. Down below is a snippet of the docker-compose file for my Angular application.
+```yml
+version: "3.9"
+services:
+  shazzboard-frontend:
+    container_name: shazzboard_frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 4200:4200
+```
+
+### CD (Continuous Delivery) Spring Boot
+Like with the Angular application, I'm also using Docker for the CD of the Spring Boot API. Because the API runs with a MySQL, I needed to host a MySQL server together with the API. To do that, I needed to pull a MySQL image from Docker hub first and then create a network container containing both the MySQL image and the API with the docker-compose file. Down below is a snippet of the docker-compose file for my Spring Boot API.
+```yml
+version: "3.9"  
+services:  
+  mysqldb:  
+    container_name: mysqldb  
+    image: mysql:5.7  
+    restart: always  
+    env_file:  
+      - .env  
+    networks:  
+      - shazamservice-mysql-net  
+    ports:  
+      - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT  
+    environment:  
+      - MYSQL_ROOT_PASSWORD=$MYSQLDB_ROOT_PASSWORD  
+      - MYSQL_DATABASE=$MYSQLDB_DATABASE  
+    volumes:  
+      - mysql_vol:/var/lib/docker/volumes/mysql_vol/_data  
+  
+  service:  
+    container_name: shazam_service  
+    depends_on:  
+      - mysqldb  
+    command: ["./wait-for-it.sh"]  
+    build:  
+      context: .  
+      dockerfile: Dockerfile  
+    restart: on-failure  
+    env_file:  
+      - .env  
+    ports:  
+      - $SERVICE_LOCAL_PORT:$SERVICE_DOCKER_PORT  
+    environment:  
+      - spring.datasource.url=jdbc:mysql://mysqldb:$MYSQLDB_DOCKER_PORT/$MYSQLDB_DATABASE?enabledTLSProtocols=TLSv1.2&useSSL=false  
+      - spring.datasource.username=$MYSQLDB_USER  
+      - spring.datasource.password=$MYSQLDB_ROOT_PASSWORD  
+      - spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect  
+      - spring.jpa.hibernate.ddl-auto=update  
+    networks:  
+      - shazamservice-mysql-net  
+  
+networks:  
+  shazamservice-mysql-net:  
+  
+volumes:  
+  mysql_vol:
+```
+
+### CD (Continuous Deployment)
+To actually deploy deploy my application, there are automated deployment systems like Kubernetes that I can use for that. Since deploying the services falls out of scope for now, I won't be covering this step.
