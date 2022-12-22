@@ -26,3 +26,4 @@ Down below is a table of proof to demonstrate my proficiency for the learning ou
 | Business processes | [Business process](docs/learning-outcomes.md#7-business-process) | [🔗](./proof/business-processes.md)
 | Research: audio conversion | [Professional](docs/learning-outcomes.md#8-professional) | [🔗](./proof/research-audio-file-conversion.md)
 | Research: CORS | [Professional](docs/learning-outcomes.md#8-professional) | [🔗](./proof/research-cors.md)
+| Professional | [Professional](docs/learning-outcomes.md#8-professional) | [🔗](./proof/professional.md)

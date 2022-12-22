@@ -4,6 +4,8 @@
 - [Project analysis](#project-analysis)
 - [Architectural designs](#architectural-designs)
 - [UI](#ui)
+	- [Customer frontend](#customer-frontend)
+	- [Staff frontend](#staff-frontend)
 
 ## Project analysis
 At the start of the project, we had a meeting with our product owners where we discussed the available projects we could work on during this semester. Each project was divided into milestones in which we could work our way to a finished project. Our group chose the Digital Menu Application as our project, of which you can find the project description [here](../design&analysis/digital-menu-application-project-description.md).
