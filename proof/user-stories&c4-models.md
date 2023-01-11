@@ -20,6 +20,14 @@ The definition of a user here is someone who:
 - As a user, I want to see my Shazam history within the dashboard.
 	- The first page that will be displayed after registering or logging in must show the registered user's Shazam history.
 	- General song information (e.g. song name and artist name) must be displayed for every result in the history page.
+- As a user, I want to get notified if my inputs were succesfully handled.
+	- The FE shoud display an error message when an existing song entry is given as input.
+	- The FE shoud display an error message when an invalid song entry is given as input.
+	- The BE should send an error message when the given song entry already exists in the DB.
+	- The BE should send an error message when the given song entry is invalid.
+	- The BE should call the DB to check the existence of the given entry.
+	- The FE should contain tests for the error handling.
+	- The BE should contain tests for the error handling.
 - As a user, I want to see the band details of the Shazam result I have selected.
 	- The artist name with the artist description must be displayed on the dashboard when an artist is selected.
 - As a user, I want to scrobble my results to Last.fm when I desire.
@@ -28,7 +36,7 @@ The definition of a user here is someone who:
 	- The dashboard should be able to accept an audio file.
 	- The dashboard should return the results found from the given audio file.	
 
-*07 November 2022. Subject to change.*
+*21 december 2022. Subject to change.*
 
 ## C4-model
 ### Context

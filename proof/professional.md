@@ -6,7 +6,7 @@
 - [Feedback](#feedback)
 
 ## Working with our product owners
-The way we work with our stakeholder within our group project is with the [Agile methodology](./agile-methodology.md). Each sprint, we will define new user stories and refine existing ones when necessary. We will then discuss these with our product owners and set the priorities tegether with them. These user stories will be worked on in our sprints of ~3 weeks. At the end of each sprint, we will give our product owners a sneak preview of what they can expect from us in the coming sprint presentation to manage their expectation. 
+The way we work with our stakeholder within our group project is with the [Agile methodology](./agile-methodology.md). Each sprint, we will define new user stories and refine existing ones when necessary. We will then discuss these with our product owners and set the priorities together with them. These user stories will be worked on in our sprints of ~3 weeks. At the end of each sprint, we will give our product owners a sneak preview of what they can expect from us in the coming sprint presentation to manage their expectation. 
 
 For our communication with our product owners outside of the sprint reviews, we have selected one person to handle the communication with them, should we have any questions about the project with them. We have decided on having one person to handle the communication to avoid causing confusion towards our product owners with many different people with different e-mail addresses communicating with them.
 
