@@ -15,6 +15,7 @@ Down below is a table of proof to demonstrate my proficiency for the learning ou
 
 | Explanation | Learning Outcome | Link |
 |:------------|:-----------------|:----:|
+| Web application | [Web application](docs/learning-outcomes.md#1-web-application) | [🔗](./proof/web-application.md)
 | Movie catalog Spring Boot microservices POC | [Web application](docs/learning-outcomes.md#1-web-application) | [🔗](https://github.com/rmzhen/PoC_MovieCatalog)
 | Employee manager full stack application POC | [Web application](docs/learning-outcomes.md#1-web-application) | [Front-end](https://github.com/rmzhen/PoC_EmployeeManagerFE) / [Back-end](https://github.com/rmzhen/PoC_EmployeeManager)
 | Software quality | [Software quality](docs/learning-outcomes.md#2-software-quality) | [🔗](./proof/software-quality.md)
